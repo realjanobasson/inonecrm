@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "@inonecrm/ui/*": ["packages/ui/src/*"],
+      "@inonecrm/db/*": ["packages/db/src/*"],
+      "@inonecrm/api/*": ["packages/api/src/*"]
+    }
+  }
+}
