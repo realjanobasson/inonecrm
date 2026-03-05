@@ -6,7 +6,7 @@ workers_dev = true
 [[d1_databases]]
 binding = "DB"
 database_name = "inone-db"
-database_id = "REPLACE_WITH_D1_DATABASE_ID"
+database_id = "e86201d3-c0ba-4eb7-8c54-306c0842aae3"
 migrations_dir = "migrations"
 
 [[r2_buckets]]
