@@ -1,0 +1,67 @@
+CLOUDFLARE DEPLOYMENT NOTES (UPLOAD-READY)
+=========================================
+
+PAGES PROJECTS
+--------------
+1) inonecrm-website
+   - Root directory: apps/website
+   - Build command: (leave empty)
+   - Output directory: / (root)
+   - Domain: inonecrm.com
+
+2) inonecrm-app
+   - Root directory: apps/app
+   - Build command: pnpm install && pnpm build
+   - Output directory: out   (Next export)
+   - Domain: app.inonecrm.com
+   - Env var: NEXT_PUBLIC_API_BASE = https://api.inonecrm.com
+
+3) inonecrm-admin
+   - Root directory: apps/admin
+   - Build command: pnpm install && pnpm build
+   - Output directory: out
+   - Domain: admin.inonecrm.com
+   - Env var: NEXT_PUBLIC_API_BASE = https://api.inonecrm.com
+
+WORKERS
+-------
+A) inonecrm-api
+   - Folder: workers/inonecrm-api
+   - Recommended domain: api.inonecrm.com
+   - Bindings:
+       D1:  DB    -> inone-db
+       R2:  MEDIA -> inone-media
+   - Secrets:
+       JWT_SECRET (required)
+       SEED_TOKEN (optional, one-time superadmin seed)
+
+   Database migrations:
+   1) wrangler d1 create inone-db
+   2) Put database_id into workers/inonecrm-api/wrangler.toml
+   3) cd workers/inonecrm-api
+      wrangler d1 migrations apply inone-db --remote
+   4) wrangler secret put JWT_SECRET
+   5) wrangler deploy
+
+B) inonecrm-realtime (optional)
+   - Folder: workers/inonecrm-realtime
+   - Durable Objects binding: CHAT_HUB
+   - Deploy: cd workers/inonecrm-realtime && wrangler deploy
+
+C) inonecrm-automations (optional)
+   - Folder: workers/inonecrm-automations
+   - Deploy: cd workers/inonecrm-automations && wrangler deploy
+   - Add Cron triggers in Cloudflare (if using sequences/SLAs)
+
+D) inonecrm-webhooks (optional)
+   - Folder: workers/inonecrm-webhooks
+   - Recommended domain: hooks.inonecrm.com
+   - Deploy: cd workers/inonecrm-webhooks && wrangler deploy
+   - Later: set Stripe/WhatsApp secrets and forward jobs to API/Queue
+
+SUPERADMIN SEED (ADMIN DASHBOARD)
+---------------------------------
+1) Set SEED_TOKEN on inonecrm-api Worker.
+2) Open admin app -> Seed Superadmin screen.
+3) Create first superadmin.
+4) Remove SEED_TOKEN afterwards.
