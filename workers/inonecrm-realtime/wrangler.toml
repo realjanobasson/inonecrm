@@ -1,0 +1,11 @@
+name = "inonecrm-realtime"
+main = "src/index.ts"
+compatibility_date = "2026-03-05"
+
+[[durable_objects.bindings]]
+name = "inonecrm-realtime"
+class_name = "ChatHub"
+
+[[migrations]]
+tag = "v1"
+new_classes = ["ChatHub"]

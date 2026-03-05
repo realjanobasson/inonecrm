@@ -1,0 +1,21 @@
+name = "inonecrm-api"
+main = "src/index.ts"
+compatibility_date = "2026-03-05"
+workers_dev = true
+
+[[d1_databases]]
+binding = "DB"
+database_name = "inone-db"
+database_id = "REPLACE_WITH_D1_DATABASE_ID"
+migrations_dir = "migrations"
+
+[[r2_buckets]]
+binding = "MEDIA"
+bucket_name = "inone-media"
+
+[vars]
+ENV = "dev"
+JWT_ISSUER = "inonecrm"
+JWT_AUDIENCE = "inonecrm-app"
+# IMPORTANT: set JWT_SECRET in Cloudflare env vars (do not commit secret)
+# JWT_SECRET = "..."

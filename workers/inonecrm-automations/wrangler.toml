@@ -1,0 +1,7 @@
+name = "inonecrm-automations"
+main = "src/index.ts"
+compatibility_date = "2026-03-05"
+workers_dev = true
+
+[vars]
+ENV = "dev"

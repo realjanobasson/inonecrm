@@ -1,0 +1,11 @@
+name = "inonecrm-webhooks"
+main = "src/index.ts"
+compatibility_date = "2026-03-05"
+workers_dev = true
+
+[vars]
+ENV = "dev"
+
+# Recommended bindings (set in Cloudflare Dashboard or wrangler):
+# - Queue producer: JOBS
+# - D1: DB (optional)

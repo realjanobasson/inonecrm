@@ -1,0 +1,1 @@
+export default { async fetch(req: Request, env: { ENV: string }) { return new Response(JSON.stringify({ ok:true, env:env.ENV, module:'workflows' }), { headers: { 'content-type':'application/json' } }); } };
