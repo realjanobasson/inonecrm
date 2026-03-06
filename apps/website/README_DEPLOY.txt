@@ -1,20 +1,18 @@
-INONECRM — WHITE MISTRAL-INSPIRED (IMAGE-HEAVY) v2
+InOneCRM premium website v25
 
-Pages:
-- index.html  (landing)
-- signup.html (trial signup request)
+Upload the full folder contents to your GitHub repo or Cloudflare Pages project.
+Main files:
+- index.html
+- styles.css
+- app.js
+- login.html
+- signup.html
+- blogs.html
+- privacy.html
+- terms.html
 
-Brand color:
-- styles.css -> :root { --brand:#45D1D5; }
-
-WhatsApp:
-- All WhatsApp buttons -> https://wa.me/27798104985
-
-Email:
-- Contact + signup forms open mail drafts to sales@inonecrm.com
-
-Cloudflare Pages deploy:
-1) Upload this folder to GitHub (keep files at repo root).
-2) Cloudflare Pages -> Create project -> Framework preset: None.
-3) Build command: (leave empty)
-4) Output directory: / (root)
+Updated in this version:
+- new hero showcase composite built from CRM screenshots
+- uploaded CRM screenshots wired into feature sections
+- new workspace modules section
+- transparent favicon set from the InOneCRM icon

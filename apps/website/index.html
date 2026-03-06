@@ -6,12 +6,27 @@
   <title>InOneCRM — AI‑Powered CRM + WhatsApp Automations</title>
   <meta name="description" content="InOneCRM is an AI-powered CRM that captures leads, follows up automatically on WhatsApp, and scales your sales pipeline with an Automation Store.">
   <meta name="theme-color" content="#ffffff">
-  <link rel="icon" href="assets/apple-touch-icon.png" type="image/png">
-  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="icon" href="assets/favicon-32.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/favicon-32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900;950&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+
+<style>
+.ai-employees-heading{
+font-weight:800;
+color:#4EDDE3;
+text-align:center;
+text-shadow:
+-2px -2px 0 #000,
+ 2px -2px 0 #000,
+-2px  2px 0 #000,
+ 2px  2px 0 #000,
+ 0px  3px 0 #000;
+}
+</style>
+
 </head>
 
 <body>
@@ -20,7 +35,7 @@
   <header class="header" data-header>
     <div class="container header__inner">
       <a class="brand" href="#top" aria-label="InOneCRM home">
-        <img class="brand__logo" src="assets/logo-full.png" alt="InOneCRM logo">
+        <img fetchpriority="high" decoding="async" loading="eager" class="brand__logo" src="assets/logo-full.png" alt="InOneCRM logo">
       </a>
 
       <nav class="nav" aria-label="Primary navigation">
@@ -56,14 +71,13 @@
           <div class="eyebrow"><span class="dot"></span>AI‑Powered CRM • WhatsApp Automations • Automation Store</div>
 
           <h1 class="hero__title">
-            A CRM that <span class="u">captures</span> leads,
-            <span class="u">follows up</span> automatically,
-            and <span class="u">scales</span> your business.
+            One AI‑powered CRM to <span class="u">capture</span> leads,
+            <span class="u">reply</span> instantly, and
+            <span class="u">grow</span> your revenue.
           </h1>
 
           <p class="hero__sub">
-            InOneCRM is a fully automated business engine: one inbox, one pipeline, and AI assistants
-            that keep your leads moving—plus an Automation Store to power up your workflow with 1‑click add‑ons.
+            InOneCRM brings leads, conversations, automation, websites, campaigns, and AI employees into one clean workspace so nothing slips through the cracks.
           </p>
 
           <div class="hero__actions">
@@ -80,7 +94,7 @@
 
         <div class="hero__media" aria-label="InOneCRM product visuals">
           <div class="stack">
-            <img class="stack__img" src="assets/hero-inonecrm.png" alt="InOneCRM dashboard across desktop, laptop and mobile" loading="eager">
+            <img fetchpriority="high" decoding="async" class="stack__img" src="assets/hero-inonecrm.png" alt="InOneCRM hero image showing desktop, laptop, and mobile CRM views" loading="eager">
           </div>
           <div class="halo" aria-hidden="true"></div>
         </div>
@@ -117,30 +131,60 @@
       </div>
     </section>
 
-    <section class="section" id="why">
-      <div class="container">
-        <div class="section__head">
-          <h2 class="h2">Built for business owners who want speed.</h2>
-          <a class="link link--arrow" href="signup.html">Get Started</a>
-        </div>
+    
 
-        <div class="cards3" data-reveal>
-          <article class="card"><div class="card__icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true">
-  <path d="M4 4h16v8H4z"/>
-  <path d="M12 12v8"/>
-  <path d="M9 17l3 3 3-3"/>
-</svg></div><h3 class="card__t">Capture</h3><p class="muted">Turn forms, ads, and WhatsApp messages into deals automatically—no manual admin.</p></article>
-          <article class="card"><div class="card__icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true">
-  <path d="M20 12a8 8 0 0 1-14.5 4.5"/>
-  <path d="M4 12a8 8 0 0 1 14.5-4.5"/>
-  <path d="M6 16H4v2"/>
-  <path d="M18 8h2V6"/>
-</svg></div><h3 class="card__t">Follow up</h3><p class="muted">AI sequences keep leads warm until they reply. Your team stays focused on closing.</p></article>
-          <article class="card"><div class="card__icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true">
-  <path d="M5 17l6-6 4 4 4-4"/>
-  <path d="M19 11V7h-4"/>
-  <path d="M5 19h14"/>
-</svg></div><h3 class="card__t">Scale</h3><p class="muted">Upgrade with the AI & Automation Store: add boosters, AI employees, and add‑ons.</p></article>
+    <section class="section panoramaSection" id="panorama">
+      <div class="container">
+        <div class="panoramaCard" data-reveal data-panorama>
+          <div class="panoramaGlow panoramaGlow--one" aria-hidden="true"></div>
+          <div class="panoramaGlow panoramaGlow--two" aria-hidden="true"></div>
+          <div class="panoramaParticles" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div class="pillTag"><span class="pillTag__dot"></span>Value Your Business Time</div>
+          <div class="panoramaIntro panoramaIntro--bar">
+            <div>
+              <h2 class="h2 panoramaTitle">Say goodbye to <span class="hl hl--teal">business chaos</span>. <span class="hl hl--ink">Save time</span> and run <span class="hl hl--teal">everything from one dashboard</span>.</h2>
+              <p class="muted panoramaLead">Stop switching between tools and struggling to keep up. InOneCRM gives you one clear view of leads, pipeline, marketing, automation, and AI employees so you can save time every week and focus on growing your business.</p>
+            </div>
+            <div class="panoramaMetrics" aria-label="Business impact metrics">
+              <div class="panoramaMetric"><strong data-count="24">0</strong><span>hours saved weekly</span></div>
+              <div class="panoramaMetric"><strong data-count="5">0</strong><span>faster follow‑up</span></div>
+              <div class="panoramaMetric"><strong data-count="100">0</strong><span>full visibility</span></div>
+            </div>
+          </div>
+          <div class="panoramaStage">
+            <div class="panoramaWindow">
+              <div class="panoramaWindow__top">
+                <span></span><span></span><span></span>
+                <div class="panoramaWindow__label">InOneCRM · Unified business command center</div>
+              </div>
+              <div class="panoramaWindow__body">
+                <img fetchpriority="high" decoding="async" src="assets/product-panorama.png" alt="InOneCRM dashboard preview showing the full platform in one workspace" loading="lazy" data-panorama-image>
+              </div>
+            </div>
+
+            <article class="floatCard floatCard--left" data-depth="10">
+              <div class="floatCard__eyebrow">Pipeline pulse</div>
+              <div class="floatCard__value">+<span data-count="37">0</span>%</div>
+              <p>More qualified opportunities moving to proposal stage.</p>
+            </article>
+
+            <article class="floatCard floatCard--right" data-depth="16">
+              <div class="floatCard__eyebrow">AI assistant</div>
+              <div class="assistantBubble assistantBubble--teal">Replies in 8 sec</div>
+              <div class="assistantBubble">Books while you sleep</div>
+              <div class="assistantBubble assistantBubble--dark">Quotes + reminders sent</div>
+            </article>
+
+            <article class="floatCard floatCard--bottom" data-depth="8">
+              <div class="floatCard__eyebrow">Live automation</div>
+              <div class="pipelineLine">
+                <span></span><span></span><span></span><span></span>
+              </div>
+              <p>Lead captured → AI qualified → Quote sent → Appointment</p>
+            </article>
+          </div>
         </div>
       </div>
     </section>
@@ -180,6 +224,19 @@
 
 <div class="section__center"><h2 class="h2">See how the AI‑powered CRM works.</h2></div>
 
+        <div class="crmFlowStrip" data-reveal aria-label="Animated CRM flow">
+          <div class="crmFlowStrip__rail"></div>
+          <div class="crmFlowStep is-live">Lead in</div>
+          <div class="crmFlowArrow"></div>
+          <div class="crmFlowStep"></div>
+          <div class="crmFlowArrow"></div>
+          <div class="crmFlowStep">Qualified</div>
+          <div class="crmFlowArrow"></div>
+          <div class="crmFlowStep">Quote sent</div>
+          <div class="crmFlowArrow"></div>
+          <div class="crmFlowStep"></div>
+        </div>
+
         <div class="storyHint" aria-hidden="true"><div class="storyHint__mouse"></div><div class="storyHint__label">Scroll to explore</div></div>
 
 
@@ -194,7 +251,7 @@
                 <div class="b"><span class="bDot"></span><span>Follow-up timer starts instantly</span></div>
               </div>
             </div>
-            <div class="gMedia"><img src="assets/leads-premium@2x.png" alt="Lead capture screen" loading="lazy"></div>
+            <div class="gMedia"><img decoding="async" src="assets/leads-premium@2x.png" alt="Lead capture screen" loading="lazy"></div>
           </article>
 
           <article class="gItem gItem--flip" data-reveal>
@@ -207,12 +264,12 @@
                 <div class="b"><span class="bDot"></span><span>Fast templates + replies</span></div>
               </div>
             </div>
-            <div class="gMedia"><img src="assets/inbox-premium@2x.png" alt="Unified inbox screen" loading="lazy"></div>
+            <div class="gMedia"><img decoding="async" src="assets/inbox-premium@2x.png" alt="Unified inbox screen" loading="lazy"></div>
           </article>
 
           <article class="gItem" data-reveal>
             <div class="gCopy">
-              <h3 class="h3">AI reply assistant & next best action</h3>
+              <h3 class="h3">assistant & next best action</h3>
               <p class="muted">AI suggests replies, summarizes the chat, and recommends the next move—follow-up, quote, booking, or call.</p>
               <div class="bullets">
                 <div class="b"><span class="bDot"></span><span>AI draft replies</span></div>
@@ -220,7 +277,7 @@
                 <div class="b"><span class="bDot"></span><span>Auto tasks + reminders</span></div>
               </div>
             </div>
-            <div class="gMedia"><img src="assets/ai-reply-premium@2x.png" alt="AI reply assistant screen" loading="lazy"></div>
+            <div class="gMedia"><img decoding="async" src="assets/ai-reply-premium@2x.png" alt="assistant screen" loading="lazy"></div>
           </article>
 
           <article class="gItem gItem--flip" data-reveal>
@@ -233,7 +290,7 @@
                 <div class="b"><span class="bDot"></span><span>Team accountability</span></div>
               </div>
             </div>
-            <div class="gMedia"><img src="assets/pipeline-premium@2x.png" alt="Pipeline screen" loading="lazy"></div>
+            <div class="gMedia"><img decoding="async" src="assets/pipeline-premium@2x.png" alt="Pipeline screen" loading="lazy"></div>
           </article>
 
           <article class="gItem" data-reveal>
@@ -246,7 +303,7 @@
                 <div class="b"><span class="bDot"></span><span>Team performance</span></div>
               </div>
             </div>
-            <div class="gMedia"><img src="assets/reporting-premium@2x.png" alt="Reporting screen" loading="lazy"></div>
+            <div class="gMedia"><img decoding="async" src="assets/reporting-premium@2x.png" alt="Reporting screen" loading="lazy"></div>
           </article>
         </div>
       </div>
@@ -255,8 +312,17 @@
     <section id="store" class="as-section">
   <div class="as-wrap">
 
+    
     <div class="as-top">
-      <h2 class="as-kicker">AI &amp; Automation Store</h2>
+      <div class="as-headBlock">
+        <h2 class="as-kicker as-kicker--employees"><span class="ai-employees-gradient">AI &amp; Automation Store</span></h2>
+        <h3 class="as-title as-title--hero store-hero-copy">
+          Install <span class="highlight-word">revenue boosters</span> that make your CRM
+          <span class="highlight-word">smarter</span>, <span class="highlight-word">faster</span>, and more
+          <span class="highlight-word">profitable</span>.
+        </h3>
+        <p class="as-topsub">Turn on high-impact automations, AI workers, and growth add-ons in minutes — no messy setup, no extra tools.</p>
+      </div>
 
       <a class="as-toplink" href="#pricing">
         Install boosters <span aria-hidden="true">→</span>
@@ -266,7 +332,6 @@
     <div class="as-grid">
       <!-- LEFT -->
       <div class="as-left">
-        <h3 class="as-title">Power up your business with add-ons.</h3>
 
         <p class="as-sub">
           Start with core CRM. Then install 1-click boosters: AI employees, automations, templates, and integrations.
@@ -496,14 +561,81 @@
         Install boosters <span aria-hidden="true">→</span>
       </a>
     </div>
+</section>
 
+
+    <section class="section" id="modules">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">More tools inside the InOneCRM workspace.</h2>
+          <a class="link link--arrow" href="signup.html">Launch your workspace</a>
+        </div>
+
+        <div class="moduleGrid" data-reveal>
+          <article class="moduleCard">
+            <div class="moduleCard__media"><img fetchpriority="high" decoding="async" src="assets/module-website.png" alt="Website builder inside InOneCRM" loading="lazy"></div>
+            <div class="moduleCard__body">
+              <h3 class="h3">Website & funnel builder</h3>
+              <p class="muted">Launch pages, forms, and conversion flows without leaving the CRM.</p>
+            </div>
+          </article>
+
+          <article class="moduleCard">
+            <div class="moduleCard__media"><img fetchpriority="high" decoding="async" src="assets/module-automation.png" alt="Automation workflow builder inside InOneCRM" loading="lazy"></div>
+            <div class="moduleCard__body">
+              <h3 class="h3">Automation builder</h3>
+              <p class="muted">Build follow-up flows, reminders, nurture sequences, and handoffs in one place.</p>
+            </div>
+          </article>
+
+          <article class="moduleCard">
+            <div class="moduleCard__media"><img fetchpriority="high" decoding="async" src="assets/module-marketing.png" alt="Marketing workspace inside InOneCRM" loading="lazy"></div>
+            <div class="moduleCard__body">
+              <h3 class="h3">Marketing control center</h3>
+              <p class="muted">Track campaigns, engagement, and revenue impact with one clean view.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    
+<section class="section socialTickerSection socialTickerSection--employees">
+  <div class="container">
+    <div class="socialTicker" aria-label="Platforms that connect with InOneCRM">
+      <div class="socialTicker__viewport">
+        <div class="socialTicker__track">
+          <div class="socialTicker__row">
+            <span class="socialTicker__item"><img fetchpriority="high" decoding="async" src="assets/1.png" alt="Instagram" loading="lazy"></span>
+            <span class="socialTicker__item"><img fetchpriority="high" decoding="async" src="assets/2.png" alt="Facebook" loading="lazy"></span>
+            <span class="socialTicker__item"><img fetchpriority="high" decoding="async" src="assets/3.png" alt="Zapier" loading="lazy"></span>
+            <span class="socialTicker__item"><img decoding="async" src="assets/4.png" alt="YouTube" loading="lazy"></span>
+            <span class="socialTicker__item"><img decoding="async" src="assets/5.png" alt="WhatsApp" loading="lazy"></span>
+            <span class="socialTicker__item"><img decoding="async" src="assets/6.png" alt="Shopify" loading="lazy"></span>
+            <span class="socialTicker__item"><img decoding="async" src="assets/7.png" alt="Social platform integration" loading="lazy"></span>
+          </div>
+          <div class="socialTicker__row" aria-hidden="true">
+            <span class="socialTicker__item"><img fetchpriority="high" decoding="async" src="assets/1.png" alt="" loading="lazy"></span>
+            <span class="socialTicker__item"><img fetchpriority="high" decoding="async" src="assets/2.png" alt="" loading="lazy"></span>
+            <span class="socialTicker__item"><img fetchpriority="high" decoding="async" src="assets/3.png" alt="" loading="lazy"></span>
+            <span class="socialTicker__item"><img decoding="async" src="assets/4.png" alt="" loading="lazy"></span>
+            <span class="socialTicker__item"><img decoding="async" src="assets/5.png" alt="" loading="lazy"></span>
+            <span class="socialTicker__item"><img decoding="async" src="assets/6.png" alt="" loading="lazy"></span>
+            <span class="socialTicker__item"><img decoding="async" src="assets/7.png" alt="" loading="lazy"></span>
+          </div>
+        </div>
+      </div>
   </div>
 </section>
 
-    <section class="section section--soft" id="employees">
+
+<section class="section section--soft" id="employees">
       <div class="container">
         <div class="as-top as-top--tight">
-          <h2 class="as-kicker">AI Employees</h2>
+          <div class="as-headBlock">
+            <h2 class="as-kicker as-kicker--employees"><span class="ai-employees-heading ai-employees-heading--premium"><span class="ai-employees-gradient">AI Employees</span></span></h2>
+            <h3 class="as-title as-title--hero">Hire AI teammates that work 24/7, reply instantly, and keep revenue moving.</h3>
+          </div>
           <a class="as-toplink" href="#store">Optional add‑ons <span aria-hidden="true">→</span></a>
         </div>
 
@@ -549,7 +681,7 @@
             </div>
           </div>
 
-          <div class="split__media"><img src="assets/ai-employees-premium@2x.png" alt="AI employees screen" loading="lazy"></div>
+          <div class="split__media"><img decoding="async" src="assets/ai-employees-showcase.png" alt="AI Employees showcase" loading="lazy"></div>
         </div>
       </div>
     </section>
@@ -615,9 +747,17 @@
             </div>
           </article>
 
-          <article class="price">
-            <h3>Enterprise</h3>
-            <div class="amt">Custom</div>
+          <article class="price price--bestdeal">
+            <div class="badge badge--best">Best deal</div>
+            <h3>Full Access + All AI Employees</h3>
+            <p class="priceSub">Everything unlocked. One price. Your full AI growth stack.</p>
+            <div class="aiMiniIcons" aria-label="Included AI employees">
+              <span class="aiMiniIcon"><svg viewBox="0 0 24 24"><path d="M12 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8Z"/><path d="M4.5 20a7.5 7.5 0 0 1 15 0"/></svg></span>
+              <span class="aiMiniIcon"><svg viewBox="0 0 24 24"><path d="M12 3.5l2.3 4.7 5.2.8-3.8 3.7.9 5.3L12 15.7 7.4 18l.9-5.3-3.8-3.7 5.2-.8L12 3.5Z"/></svg></span>
+              <span class="aiMiniIcon"><svg viewBox="0 0 24 24"><rect x="5" y="4.5" width="14" height="15" rx="3"/><path d="M9 9.5h6"/><path d="M9 13.5h6"/><path d="M12 4.5v-2"/><path d="M8 4.5v-2"/><path d="M16 4.5v-2"/></svg></span>
+              <span class="aiMiniIcon"><svg viewBox="0 0 24 24"><path d="M7 7h10v10H7z"/><path d="M10 10h4v4h-4z"/><path d="M12 2v3"/><path d="M12 19v3"/><path d="M2 12h3"/><path d="M19 12h3"/></svg></span>
+            </div>
+            <div class="amt">$420 <span>/ pm</span></div>
             <div class="payRow" aria-label="Billing options">
               <span class="payIcon" aria-hidden="true">
                 <svg viewBox="0 0 24 24"><path d="M3.5 7.5h17v9h-17z"/><path d="M3.5 10h17"/><path d="M6.5 14h4.5"/></svg>
@@ -628,15 +768,17 @@
               <span class="payIcon" aria-hidden="true">
                 <svg viewBox="0 0 24 24"><path d="M7 3.5h10l2 2V20.5H7z"/><path d="M17 3.5v4h4"/><path d="M9 10h6"/><path d="M9 13.5h6"/><path d="M9 17h4"/></svg>
               </span>
-              <span class="payNote">Invoice / EFT available</span>
+              <span class="payNote">Secure card billing</span>
             </div>
             <ul>
-              <li>White‑label</li>
-              <li>Custom AI employees</li>
-              <li>Advanced integrations</li>
-              <li>SLA + onboarding</li>
+              <li>Full InOneCRM platform access</li>
+              <li>All AI employees included</li>
+              <li>Unlimited automations</li>
+              <li>AI & Automation Store access</li>
+              <li>WhatsApp + follow-up systems</li>
+              <li>Priority support</li>
             </ul>
-            <a class="btn btn--ghost" href="mailto:sales@inonecrm.com">Contact Sales</a>
+            <a class="btn" href="signup.html?plan=best-deal">Get Full Access</a>
             <div class="payBrands" aria-label="Accepted payment methods">
               <img src="assets/payment-logos.png" alt="Accepted cards" loading="lazy" decoding="async">
             </div>
@@ -674,7 +816,7 @@
 
         <div class="footerGrid">
           <div class="footerCol footerCol--brand">
-            <img src="assets/logo-full.png" alt="InOneCRM" class="footerLogo">
+            <img decoding="async" loading="lazy" src="assets/logo-full.png" alt="InOneCRM" class="footerLogo">
             <p class="fine">AI‑powered CRM + WhatsApp automations + AI & Automation Store — built for speed and conversions.</p>
 
             <div class="footerQuick footerQuick--emails">
@@ -727,7 +869,7 @@
           <div class="footerCol">
             <h4 class="footerH">Product</h4>
             <a href="#screens">CRM & Pipeline</a>
-            <a href="#employees">AI Employees</a>
+            <a href="#employees"><span class="ai-employees-heading ai-employees-heading--nav">AI Employees</span></a>
             <a href="#store">AI & Automation Store</a>
             <a href="#pricing">Pricing</a>
             <a href="signup.html">Get Started</a>
@@ -766,5 +908,50 @@
   </main>
 
   <script src="app.js"></script>
+
+      <div class="ai-employees-visual" aria-hidden="true">
+        <div class="ai-glow-orb ai-glow-orb--one"></div>
+        <div class="ai-glow-orb ai-glow-orb--two"></div>
+
+        <div class="ai-chat-bubble ai-chat-bubble--left">
+          <span class="ai-dot"></span>
+          New lead replied in 4 sec
+        </div>
+
+        <div class="ai-chat-bubble ai-chat-bubble--right">
+          <span class="ai-dot"></span>
+          Appointmentautomatically
+        </div>
+
+        
+          <div class="ai-flow__line"></div>
+          <div class="ai-flow__node"></div>
+          <div class="ai-flow__line"></div>
+          <div class="ai-flow__node"></div>
+        </div>
+      </div>
+
+
+
+  <div class="ai-orb-v37 ai-orb-v37-b"></div>
+
+  <div class="ai-bubble-v37 ai-bubble-v37-left">
+    <span class="ai-bubble-dot-v37"></span>
+    New lead replied in 4 sec
+  </div>
+
+  <div class="ai-bubble-v37 ai-bubble-v37-right">
+    <span class="ai-bubble-dot-v37"></span>
+    Appointmentautomatically
+  </div>
+
+  
+    <div class="ai-line-v37"></div>
+    <div class="ai-node-v37"></div>
+    <div class="ai-line-v37"></div>
+    <div class="ai-node-v37"></div>
+  </div>
+</div>
+
 </body>
 </html>
